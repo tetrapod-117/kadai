@@ -6,37 +6,6 @@
 <meta name="viewport" content="width=device-width,
  initial-scale=1.0,user-scalable=yes" />
 <link href="css/main.css" rel="stylesheet" type="text/css">
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script type="text/javascript" src="js/script02.js" ></script>
-<link href="css/style01.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script type="text/javascript" src="js/script01.js" ></script>
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
-<script type="text/javascript">
-$(function(){
-    var setImg = '#viewer';
-    var fadeSpeed = 1500;
-    var switchDelay = 5000;
-
-    $(setImg).children('img').css({opacity:'0'});
-    $(setImg + ' img:first').stop().animate({opacity:'1',zIndex:'20'},fadeSpeed);
-
-    setInterval(function(){
-        $(setImg + ' :first-child').animate({opacity:'0'},fadeSpeed).next('img').animate({opacity:'1'},fadeSpeed).end().appendTo(setImg);
-    },switchDelay);
-});
-</script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script src="js/jquery.bxslider.min.js"></script>
-<link href="css/jquery.bxslider.css" rel="stylesheet" />
-<script type="text/javascript">
-        $(document).ready(function(){
-            $('.bxslider').bxSlider({
-                auto: true,
-            });
-        });
-</script>
-
 </head>
 <div id="page-header">
 <div class="title">
